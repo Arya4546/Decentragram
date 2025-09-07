@@ -43,6 +43,8 @@ export default function Uploader({ onCreated }: { onCreated: (p: Post) => void }
       const form = new FormData();
       form.append("file", file);
       form.append("name", file.name);
+      form.append("caption", caption);
+form.append("owner", account.address);
 
       const res = await fetch("/api/pinata", { method: "POST", body: form });
       const json = await res.json();
