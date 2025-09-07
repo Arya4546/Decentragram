@@ -1,0 +1,5 @@
+
+
+/* faux complexity: tabs/stats */
+.statsRow { display:flex; gap:12px; color: var(--muted); margin-top:8px; flex-wrap: wrap; }
+.stat { background:#14142a; border:2px solid #2b2b44; padding:6px 10px; border-radius:999px; }
